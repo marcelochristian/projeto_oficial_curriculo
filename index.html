@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #e1ebeb;
+        }
+
+        .conteiner {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .nome_pessoa {
+            color: #3498db;
+            font-size: 34px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .nome_profissao {
+            color: #3b3737;
+            font-size: 24px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .conteiner_informacao_contato {
+            display: flex;
+            /* justify-content: space-between; */
+
+        }
+
+        .informacao_contato {
+            color: #3498db;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .link_contato {
+            text-decoration: none;
+        }
+
+        .secao_curriculo {
+            font-size: 28px;
+            color: #3498db;
+            font-weight: bold;
+            border-left: 5px #3498db solid;
+            padding: 5px;
+        }
+
+        .descricao_resumo_profissional {
+            font-size: 18px;
+            text-align: justify;
+            color: #464444
+        }
+
+        .cargo_experiencia {
+            font-size: 16px;
+            color: #464444
+        }
+
+        .empresa_experiencia {
+            font-size: 16px;
+            color: #3498db
+        }
+
+        .periodo_experiencia {
+            font-size: 15px;
+            color: #a49e9e
+        }
+
+        .lista_experiencia {
+            font-size: 14px;
+            color: red;
+        }
+
+        .separador {
+            border: 0.5px #3498db solid;
+        }
+
+        /* h1 {
+            color: red;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            color: blue;
+            font-size: 32px;
+            text-align: right;
+        }
+
+        p {
+            color: purple; 
+        }*/
+        @media(max-width: 800px) {
+            .container_informacao_contato {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+
+        @media(min-width: 600px) {
+            body {
+                background-color: #000;
+            }
+
+            .separador {
+                border-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 style="color: aqua; font-size: 52px; text-align: center;">Marcelo Christian Ibanez</h1> -->
+    <div class="conteiner">
+        <h1 class="nome_pessoa">João Silva</h1>
+        <p class="nome_profissao">Desenvolvedor Full Stack</p>
+        <div class="container_informacao_contato">
+            <p class="informacao_contato">Email: <a href="mailto:joao.silva@example.com"
+                    class="link_contato">joao.silva@example.com</a></p>
+            <p class="informacao_contato">Telefone: <a href="tel:55999999999">999999999</a></p>
+        </div>
+        <div class="container_informacao_contato">
+            <p class="informacao_contato">LinkedIn: <a href="https://linkedin.com/in/joaosilva"
+                    target="_blank">linkedin.com/in/joaosilva</a></p>
+            <p class="informacao_contato">Github: <a href="https://github.com/joaosilva" target="_blank">joaosilva</a>
+            </p>
+        </div>
+        <hr>
+        <div class="separador">
+            <h2 class="secao_curriculo">Resumo Profissional</h2>
+            <p>Profissional com ampla experiência em desenvolvimento de software, especializado em tecnologias web
+                modernas
+                e
+                metodologias ágeis.</p>
+        </div>
+
+        <hr>
+
+        <h2 class="secao_curriculo">Experiência Profissional</h2>
+        <h3 class="cargo_experiencia"><b>Desenvolvedor Full Stack Sênior</b></h3>
+        <p class="empresa_experiencia"><b>InovaTech Ltda</b><b> - São Paulo - SP</b></p>
+        <p class="periodo_experiencia">Janeiro 2020 - Presente</p>
+        <ul class="lista_experiencia">
+            <li>Desenvolvimento de aplicações web utilizando tecnologias modernas</li>
+            <li>Implementação de APIs RESTful</li>
+            <li>Otimização de desempenho de sistemas</li>
+            <li>Mentoria de desenvolvedores juniores</li>
+        </ul>
+
+        <h3 class="cargo_experiencia"><b>Desenvolvedor Full Stack Pleno</b></h3>
+        <p class="empresa_experiencia"><b>CodeWorks Ltda</b><b> - Rio de Janeiro - RJ</b></p>
+        <p class="periodo_experiencia">Março 2018 - Dezembro 2019</p>
+        <ul class="lista_experiencia">
+            <li>Desenvolvimento de funcionalidades front-end e back-end</li>
+            <li>Colaboração com equipes multidisciplinares</li>
+            <li>Manutenção de sistemas legados</li>
+        </ul>
+    </div>
+</body>
+
+</html>
